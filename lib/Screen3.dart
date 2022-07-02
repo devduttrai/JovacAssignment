@@ -26,7 +26,7 @@ class _screen3 extends State<screen3> {
           ),
           Image(
             image: NetworkImage(
-                'https://img.freepik.com/free-vector/elegant-certificate-template_23-2148573331.jpg?w=2000'),
+                'https://www.vectorjunky.com/wp-content/uploads/2017/02/Pr%20097%20-%20TRI%20-%2015_12_10%20-%20037.jpg'),
             height: 500,
             width: 500,
           ),

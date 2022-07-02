@@ -19,6 +19,7 @@ class screen1 extends StatelessWidget {
         body: SafeArea(
           child: ListView(
             children: [
+              // ignore: prefer_const_constructors
               SizedBox(
                 height: 20,
               ),

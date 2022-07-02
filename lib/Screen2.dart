@@ -12,7 +12,7 @@ void main() {
   runApp(screen2());
 }
 
-// ignore: camel_case_types
+// ignore: camel_case_type
 class _screen2 extends State<screen2> {
   final TextEditingController _name = TextEditingController();
   final TextEditingController _email = TextEditingController();
