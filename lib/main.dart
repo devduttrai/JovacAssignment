@@ -2,33 +2,69 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class newproject extends StatelessWidget {
-  const newproject({Key? key}) : super(key: key);
+import 'Screen2.dart';
+
+void main() {
+  runApp(screen1());
+}
+
+class screen1 extends StatelessWidget {
+  const screen1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: Column(
-          children: [
-            Padding(padding: EdgeInsets.only(top: 200)),
-            Text("TRAINING",
-                style: TextStyle(
-                    color: Color.fromARGB(255, 29, 136, 223),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 34)),
-            Padding(padding: EdgeInsets.only(top: 50)),
-            Center(
-              child: Image(image: AssetImage('https://i.pinimg.com/originals/62/ae/dd/62aedda6f003791ab3d66f8701f59d08.png')),
-            ),
-            Padding(padding: EdgeInsets.only(top: 40)),
-            Container(
-                width: 250,
+    return (MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: SafeArea(
+          child: ListView(
+            children: [
+              SizedBox(
+                height: 20,
+              ),
+              Center(
+                child: Text(
+                  'Training',
+                  style: TextStyle(
+                      fontSize: 50,
+                      color: Color.fromARGB(245, 93, 12, 144),
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Center(
+                child: Container(
+                  child: Image(
+                    image: NetworkImage(
+                        'https://cdn.pixabay.com/photo/2020/06/06/22/00/online-5268393__340.png'),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
                 child: ElevatedButton(
-                    onPressed: () {}, child: Text("Get Started")))
-          ],
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) {
+                        return screen2();
+                      }),
+                    );
+                  },
+                  child: const Text(
+                    "Get Started",
+                    style: TextStyle(
+                        fontStyle: FontStyle.normal,
+                        color: Color.fromARGB(245, 93, 12, 144)),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
-    );
+    ));
   }
 }
