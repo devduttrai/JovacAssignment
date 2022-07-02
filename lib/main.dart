@@ -2,11 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-void main() {
-  runApp(screen1());
-}
-class screen1 extends StatelessWidget {
-  const screen1({Key? key}) : super(key: key);
+class newproject extends StatelessWidget {
+  const newproject({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +19,7 @@ class screen1 extends StatelessWidget {
                     fontSize: 34)),
             Padding(padding: EdgeInsets.only(top: 50)),
             Center(
-              child: Image(image: AssetImage('images/project.png')),
+              child: Image(image: AssetImage('https://i.pinimg.com/originals/62/ae/dd/62aedda6f003791ab3d66f8701f59d08.png')),
             ),
             Padding(padding: EdgeInsets.only(top: 40)),
             Container(
