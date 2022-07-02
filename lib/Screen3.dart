@@ -26,7 +26,7 @@ class _screen3 extends State<screen3> {
           ),
           Image(
             image: NetworkImage(
-                'https://www.vectorjunky.com/wp-content/uploads/2017/02/Pr%20097%20-%20TRI%20-%2015_12_10%20-%20037.jpg'),
+                'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/certificate-of-appreciation-design-template-0bf821f526097254494ef03e16d137ca_screen.jpg?ts=1618054654'),
             height: 500,
             width: 500,
           ),
