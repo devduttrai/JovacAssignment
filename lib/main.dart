@@ -23,6 +23,7 @@ class screen1 extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
+              // ignore: prefer_const_constructors
               Center(
                 child: Text(
                   'Training',
